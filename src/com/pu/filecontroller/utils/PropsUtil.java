@@ -32,6 +32,7 @@ public final class PropsUtil {
             if(ins==null){
                 throw new FileNotFoundException(fileName+" file is not found ");
             }
+            LOGGER.debug("正在加载配置文件......");
             props = new Properties();
             props.load(ins);
         }  catch (IOException e) {
